@@ -1,0 +1,336 @@
+<ns1:multiRef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" id="id0" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ServerHardwareVO" linked="true">
+    <ns1:assetTag xsi:type="xsd:string" xsi:nil="1"/>
+    <ns1:beginDate xsi:type="xsd:dateTime">2015-01-19T07:01:40.000Z</ns1:beginDate>
+    <ns1:buses xsi:type="soapenc:Array" soapenc:arrayType="ns2:BusComponent[0]"/>
+    <ns1:chassisId xsi:type="xsd:string">SERIAL</ns1:chassisId>
+    <ns1:ref id="id16" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns5:ServerRef" linked="true">
+        <ns1:id xsi:type="xsd:long">17800002</ns1:id>
+        <ns1:idAsLong xsi:type="xsd:long">17800002</ns1:idAsLong>
+        <ns1:name xsi:type="xsd:string">HOSTNAME10</ns1:name>
+        <ns1:secureResourceTypeName xsi:type="xsd:string">device</ns1:secureResourceTypeName>
+    </ns1:ref>
+    <ns1:cpus xsi:type="soapenc:Array" soapenc:arrayType="ns2:CPUComponent[2]">
+        <ns1:item id="id1" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns21:CPUComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2014-08-30T19:18:55.000Z</ns1:beginDate>
+            <ns1:cacheSize xsi:type="xsd:string">4096</ns1:cacheSize>
+            <ns1:family xsi:type="xsd:string">X64</ns1:family>
+            <ns1:id xsi:type="xsd:long">235610002</ns1:id>
+            <ns1:model xsi:type="xsd:string">Intel(R) Xeon(R) CPU            5160  @ 3.00GHz</ns1:model>
+            <ns1:slot xsi:type="xsd:string">CPU0</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">1992</ns1:speed>
+            <ns1:status xsi:type="xsd:string">ON-LINE</ns1:status>
+            <ns1:stepping xsi:type="xsd:string">11</ns1:stepping>
+            <ns1:vendor xsi:type="xsd:string">GENUINEINTEL</ns1:vendor>
+        </ns1:item>
+        <ns1:item id="id2" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns32:CPUComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-11-04T15:15:10.000Z</ns1:beginDate>
+            <ns1:cacheSize xsi:type="xsd:string">4096</ns1:cacheSize>
+            <ns1:family xsi:type="xsd:string">X64</ns1:family>
+            <ns1:id xsi:type="xsd:long">235620002</ns1:id>
+            <ns1:model xsi:type="xsd:string">Intel(R) Xeon(R) CPU            5160  @ 3.00GHz</ns1:model>
+            <ns1:slot xsi:type="xsd:string">CPU1</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">1992</ns1:speed>
+            <ns1:status xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:stepping xsi:type="xsd:string">11</ns1:stepping>
+            <ns1:vendor xsi:type="xsd:string">GENUINEINTEL</ns1:vendor>
+        </ns1:item>
+    </ns1:cpus>
+    <ns1:hwSignature xsi:type="xsd:string" xsi:nil="1"/>
+    <ns1:interfaces xsi:type="soapenc:Array" soapenc:arrayType="ns2:InterfaceComponent[11]">
+        <ns1:item id="id3" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns25:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">0</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns26="http://common.opsware.com" xsi:type="ns26:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:id xsi:type="xsd:long">111440002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">[00000007] Microsoft ISATAP Adapter</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">0</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id4" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns22:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">0</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns23="http://common.opsware.com" xsi:type="ns23:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">33:50:6F:45:30:30</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111470002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">[00000003] WAN Miniport (PPPOE)</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">0</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id5" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns27:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">0</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns28="http://common.opsware.com" xsi:type="ns28:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:id xsi:type="xsd:long">111450002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">[00000013] Microsoft ISATAP Adapter</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">0</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id6" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns29:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">0</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns30="http://common.opsware.com" xsi:type="ns30:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">50:50:54:50:30:30</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111500002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">[00000002] WAN Miniport (PPTP)</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">0</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id7" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns15:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">100</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns16="http://common.opsware.com" xsi:type="ns16:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">00:15:17:72:66:B8</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111460002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">User-Facing 1</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">100</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">true</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id8" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns17:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">1000</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns18="http://common.opsware.com" xsi:type="ns18:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">00:1A:64:78:B2:36</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111530002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string">10.88.195.76</ns1:ipAddress>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string">255.255.255.0</ns1:netmask>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">Backup</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">1000</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id9" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns19:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">100</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns20="http://common.opsware.com" xsi:type="ns20:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">00:1A:64:78:B2:34</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111490002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">User-Facing 2</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">100</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">true</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id10" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns3:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">100</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns4="http://common.opsware.com" xsi:type="ns4:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">00:15:17:72:66:B8</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111520002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string">10.88.214.123</ns1:ipAddress>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string">255.255.255.0</ns1:netmask>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">Team user int</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">100</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id11" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns8:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">100</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns9="http://common.opsware.com" xsi:type="ns9:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">00:15:17:72:66:B9</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111480002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string">10.88.214.124</ns1:ipAddress>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string">255.255.255.0</ns1:netmask>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">Mgmt</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">100</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id12" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns6:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">0</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns7="http://common.opsware.com" xsi:type="ns7:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string">20:41:53:59:4E:FF</ns1:hardwareAddress>
+            <ns1:id xsi:type="xsd:long">111510002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">[00000011] RAS Async Adapter</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">0</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id13" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns12:InterfaceComponent" linked="true">
+            <ns1:adminEnabled xsi:type="xsd:boolean">false</ns1:adminEnabled>
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:collisions xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredDuplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:configuredSpeed xsi:type="xsd:string">0</ns1:configuredSpeed>
+            <ns1:connectedTo xmlns:ns13="http://common.opsware.com" xsi:type="ns13:ObjRef" xsi:nil="1"/>
+            <ns1:descriptor xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:duplex xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:enabled xsi:type="xsd:boolean">true</ns1:enabled>
+            <ns1:hardwareAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:id xsi:type="xsd:long">111430002</ns1:id>
+            <ns1:ipAddress xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:localHostName xsi:type="xsd:string">HOSTNAME10</ns1:localHostName>
+            <ns1:netmask xsi:type="xsd:string" xsi:nil="1"/>
+            <ns1:primaryInterface xsi:type="xsd:boolean">false</ns1:primaryInterface>
+            <ns1:slot xsi:type="xsd:string">[00000014] Microsoft ISATAP Adapter</ns1:slot>
+            <ns1:speed xsi:type="xsd:string">0</ns1:speed>
+            <ns1:type xsi:type="xsd:string">ETHERNET</ns1:type>
+            <ns1:useDHCP xsi:type="xsd:boolean">false</ns1:useDHCP>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+    </ns1:interfaces>
+    <ns1:manufacturer xsi:type="xsd:string">IBM</ns1:manufacturer>
+    <ns1:memories xsi:type="soapenc:Array" soapenc:arrayType="ns2:MemoryComponent[2]">
+        <ns1:item id="id14" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns5:MemoryComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:24.000Z</ns1:beginDate>
+            <ns1:id xsi:type="xsd:long">35290002</ns1:id>
+            <ns1:quantity xsi:type="xsd:string">4193388</ns1:quantity>
+            <ns1:type xsi:type="xsd:string">RAM</ns1:type>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id15" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns24:MemoryComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2014-09-20T13:34:07.000Z</ns1:beginDate>
+            <ns1:id xsi:type="xsd:long">35300002</ns1:id>
+            <ns1:quantity xsi:type="xsd:string">4127688</ns1:quantity>
+            <ns1:type xsi:type="xsd:string">SWAP</ns1:type>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+    </ns1:memories>
+    <ns1:model xsi:type="xsd:string">MODELTEST</ns1:model>
+
+    <ns1:serialNumber xsi:type="xsd:string">SERIAL</ns1:serialNumber>
+    <ns1:storages xsi:type="soapenc:Array" soapenc:arrayType="ns2:StorageComponent[3]">
+        <ns1:item id="id17" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns11:StorageComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:23.000Z</ns1:beginDate>
+            <ns1:capacity xsi:type="xsd:string">0</ns1:capacity>
+            <ns1:drive xsi:type="xsd:string">F:</ns1:drive>
+            <ns1:id xsi:type="xsd:long">86490002</ns1:id>
+            <ns1:media xsi:type="xsd:string">CDROM</ns1:media>
+            <ns1:model xsi:type="xsd:string">HL-DT-ST RW/DVD GCC-T10N ATA Device</ns1:model>
+            <ns1:type xsi:type="xsd:string">Storage</ns1:type>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id18" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns14:StorageComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:23.000Z</ns1:beginDate>
+            <ns1:capacity xsi:type="xsd:string">0</ns1:capacity>
+            <ns1:drive xsi:type="xsd:string">E:</ns1:drive>
+            <ns1:id xsi:type="xsd:long">86500002</ns1:id>
+            <ns1:media xsi:type="xsd:string">CDROM</ns1:media>
+            <ns1:model xsi:type="xsd:string">BOZIN DQ3OPEJOXUR0 SCSI CdRom Device</ns1:model>
+            <ns1:type xsi:type="xsd:string">Storage</ns1:type>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+        <ns1:item id="id19" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="ns10:StorageComponent" linked="true">
+            <ns1:beginDate xsi:type="xsd:dateTime">2013-04-22T15:15:23.000Z</ns1:beginDate>
+            <ns1:capacity xsi:type="xsd:string">139894</ns1:capacity>
+            <ns1:drive xsi:type="xsd:string">PHYSICALDRIVE0</ns1:drive>
+            <ns1:id xsi:type="xsd:long">86480002</ns1:id>
+            <ns1:media xsi:type="xsd:string">SCSI DISK</ns1:media>
+            <ns1:model xsi:type="xsd:string">Adaptec Array SCSI Disk Device</ns1:model>
+            <ns1:type xsi:type="xsd:string">SCSI</ns1:type>
+            <ns1:vendor xsi:type="xsd:string" xsi:nil="1"/>
+        </ns1:item>
+    </ns1:storages>
+    <ns1:uuid xsi:type="xsd:string">0b517d45-473a-33c4-9aa9-8fc7707d1ccf</ns1:uuid>
+</ns1:multiRef>

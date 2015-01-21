@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <soapenv:Fault>
+            <faultcode>soapenv:Client</faultcode>
+            <faultstring>ID:   HPSA-008
+                Code:   com.opsware.common.MessageSpec.NOT_FOUND
+                Details:   The object [(ServerRef:6000123)] was not found.</faultstring>
+            <detail>
+                <fault xsi:type="ns1:NotFoundException" xmlns:ns1="http://common.opsware.com">
+                    <message xsi:type="xsd:string">ID:   HPSA-008
+                        Code:   com.opsware.common.MessageSpec.NOT_FOUND
+                        Details:   The object [(ServerRef:6000123)] was not found.</message>
+                    <exceptionTime xsi:type="xsd:dateTime">2015-01-18T14:19:10.988Z</exceptionTime>
+                    <message xsi:type="xsd:string">ID:   HPSA-008
+                        Code:   com.opsware.common.MessageSpec.NOT_FOUND
+                        Details:   The object [(ServerRef:6000123)] was not found.</message>
+                    <messageDef xsi:type="ns1:Message">
+                        <errorId xsi:type="xsd:string" xsi:nil="1"/>
+                        <errorIdFromUtil xsi:type="xsd:string">HPSA-008</errorIdFromUtil>
+                        <errorParamsFromUtil xsi:type="ns2:ArrayOf_soapenc_string" xsi:nil="1" xmlns:ns2="http://server.opsware.com"/>
+                        <key xsi:type="xsd:string">com.opsware.common.MessageSpec.NOT_FOUND</key>
+                        <messageFormat xsi:type="xsd:string">The object {0} was not found.</messageFormat>
+                    </messageDef>
+                    <messageParams xsi:type="soapenc:Array" soapenc:arrayType="xsd:anyType[1]" xmlns:ns3="http://server.opsware.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+                        <item xsi:type="xsd:string">[(ServerRef:6000123)]</item>
+                    </messageParams>
+                    <objects xsi:type="soapenc:Array" soapenc:arrayType="ns1:ObjRef[1]" xmlns:ns4="http://server.opsware.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+                        <item xsi:type="ns4:ServerRef">
+                            <id xsi:type="xsd:long">6000123</id>
+                            <idAsLong xsi:type="xsd:long">6000123</idAsLong>
+                            <name xsi:type="xsd:string" xsi:nil="1"/>
+                            <secureResourceTypeName xsi:type="xsd:string">device</secureResourceTypeName>
+                        </item>
+                    </objects>
+                </fault>
+            </detail>
+        </soapenv:Fault>
+    </soapenv:Body>
+</soapenv:Envelope>

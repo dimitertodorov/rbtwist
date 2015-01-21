@@ -1,0 +1,16 @@
+hpsa_prod: &hpsa_prod
+  server: 10.2.2.3
+  user: user
+  password: mycomplexpassword
+  version: 9.1
+  port: 443
+
+hpsa_lab: &hpsa_lab
+  server: 10.4.4.4
+  user: detuser
+  password: mycomplexpassword
+  version: 10.2
+  port: 443
+
+production: *hpsa_prod
+development: *hpsa_prod
