@@ -162,7 +162,7 @@ todorovd :todorovd-mbp in /opt/rubydev/gems/rbtwist
 $ irb
 2.1.3 :001 > require './lib/rbtwist/wsdl'
  => true
-2.1.3 :002 > Rbtwist::Wsdl.parse_remote_wsdls('10.195.214.70',443)
+2.1.3 :002 > Rbtwist::Wsdl.parse_remote_wsdls('10.2.2.4',443)
 {:name=>"NasConnectionService",
  :download=>0.27771,
  :nokogiri_parse=>1.021665,
