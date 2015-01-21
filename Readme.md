@@ -138,10 +138,13 @@ Rbtwist relies on Type and Service definitions extracted from the Opsware WSDL f
 For speed purposes, this data is parsed once, then stored as a Marshalled hash on disk.
 I provide two pre-parsed DBs of types in the paths below. Rbtwist looks for one of these two files depending on your version.
 If you parse your own, simply replace the existing .db file with your output.
-Version | File
----------|--------
-9.1x|model_db/opsware_models_91.db
-10.2x|model_db/opsware_models_102.db
+
+| Version | Model DB          |
+| ------------- | ----------- |
+| 9.1x      | model_db/opsware_models_91.db|
+| 10.2x     | model_db/opsware_models_102.db     |
+
+
 
 #### Parse your own WSDL
 The WSDL parsing functionality is self-contained within **Rbtwist::Wsdl** 'lib/rbtwist/wsdl'.
