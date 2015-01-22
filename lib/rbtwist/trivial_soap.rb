@@ -119,7 +119,7 @@ class Rbtwist::TrivialSoap
   end
 
   def request action, body, service_path
-    headers = { 'content-type' => 'text/xml; charset=utf-8', 'SOAPAction' => action }
+    headers = { 'content-type' => 'text/xml; charset=utf-8', 'SOAPAction' => action}
     headers['cookie'] = @cookie if @cookie
 
     if @debug

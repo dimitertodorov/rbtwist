@@ -1,5 +1,6 @@
-require 'spec_helper'
+require 'rbtwist'
 
+Opsware=Rbtwist::Opsware
 
 describe Opsware::ModifiableVO do
   describe '#dirtyAttributes' do
@@ -18,13 +19,6 @@ describe Opsware::ModifiableVO do
       @vo.customer=customer
       expect(@vo.dirtyAttributes).to eq(['customer'])
     end
-
-
-
-
-
-
-
 
     before(:each) do
       @vo=complex_object=Opsware.ServerVO(

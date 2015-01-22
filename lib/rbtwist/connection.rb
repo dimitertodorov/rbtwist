@@ -74,7 +74,6 @@ class Connection < TrivialSoap
       resp.xpath("/soapenv:Envelope/soapenv:Body/multiRef").each do |mr|
         id=mr.attributes['id'].value.to_sym
         ref_hash[id]=mr
-
       end
         if desc.class==Array
           desc=desc.first
@@ -91,12 +90,12 @@ class Connection < TrivialSoap
             node.replace linked
           end
           t2=Time.now
-          linked_nodes=resp.xpath('//*[@href]')
+
           t3=Time.now
-          linked_nodes.each do |node|
+          resp.xpath('//*[@href]').each do |node|
             node_name=node.name
 
-            id=node.attributes['href'].value.gsub('#','').to_sym
+            id=node['href'].gsub('#','').to_sym
 
             linked=ref_hash[id]
 
@@ -104,7 +103,7 @@ class Connection < TrivialSoap
             node.children=linked.children
             node.name=node_name
 
-            #Replace the hash with this clone of this node.
+
             ref_hash[id]=node.clone
           end
           t4=Time.now
@@ -121,6 +120,7 @@ class Connection < TrivialSoap
               :total => t5-t1
 
           }
+
           return return_array
         else
           t1=Time.now

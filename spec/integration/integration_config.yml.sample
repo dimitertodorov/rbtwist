@@ -1,0 +1,3 @@
+:server_service:
+  :server_filter:
+    :expression: 'ServerVO.hostName CONTAINS SOMEHOSTNAME'

@@ -42,9 +42,8 @@ class Deserializer
     @loader = conn.class.loader
   end
 
-  def deserialize document, type=nil
+  def deserialize node, type=nil
     t1=Time.now
-    node=document
     type_attr = node['type']
     if node.attributes['type'] and not type_attr
       type_attr = node.attributes['type'].value
@@ -69,7 +68,6 @@ class Deserializer
       when :int
         node.content.to_i
       when :float
-        puts "deserializing #{node.content.to_f}"
         node.content.to_f
       when :date
         leaf_date node
@@ -90,9 +88,9 @@ class Deserializer
       end
 
       if type =~ /:/
-
         type = type.split(":", 2)[1]
       end
+
       if type =~ /^Array/
         type=node.attributes['arrayType'].value.gsub(/\[.*\]/,'').split(':').last
         return node.children.select(&:element?).map { |c| deserialize c, type }
@@ -101,8 +99,6 @@ class Deserializer
       if type =~ /^Map/
         return Rbtwist::Opsware::Map.new(node.children.select(&:element?).map { |c| deserialize c, 'mapItem' })
       end
-
-
 
       klass = @loader.get(type) or fail "no such type '#{type}'"
 
@@ -142,10 +138,6 @@ class Deserializer
       node.children.select(&:element?).each do |e|
         prop_node=e if e.name.split(':').last==name
       end
-      if prop_node.name=='item'
-        puts prop_node
-      end
-
 
       if prop_node.attributes['type']
         props[name.to_sym] = deserialize(prop_node,prop_node.attributes['type'])

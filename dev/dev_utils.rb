@@ -50,11 +50,11 @@ def load_test
   Rbtwist.get_connection(true)
   Rbtwist.get_connection.profiling=true
   ss=Rbtwist::Opsware.ServerService(Rbtwist.get_connection)
-  2.times do
+  5.times do
     filter=Rbtwist::Opsware::Filter.new
     filter.expression='device_customer_name EQUAL_TO AD'
     refs=ss.findServerRefs({filter: filter})
-    vos << server_service.getServerVOs({selves: refs})
+    vos = server_service.getServerVOs({selves: refs})
     puts refs.count
   end
   pp Rbtwist.get_connection.profile_summary
@@ -97,6 +97,12 @@ def script_job_output job_id
     puts ssjo.tailStdout
   end
 end
+
+def virtual_server_service
+  Opsware.V12nVirtualServerService(Rbtwist.connection)
+end
+
+
 
 
 

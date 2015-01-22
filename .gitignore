@@ -6,6 +6,7 @@
 
 ## RBTWIST
 rbtwist.yml
+integration_config.yml
 opsware_gen*
 /data
 /coverage

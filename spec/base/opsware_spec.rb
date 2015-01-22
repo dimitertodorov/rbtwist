@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'base/spec_helper'
 
 
 describe Opsware do
