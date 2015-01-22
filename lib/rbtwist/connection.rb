@@ -70,6 +70,7 @@ class Connection < TrivialSoap
       end
     else
       return_node=resp.at_xpath("//*[contains(local-name(),'Return')]")
+      return nil unless return_node
       ref_hash={}
       resp.xpath("/soapenv:Envelope/soapenv:Body/multiRef").each do |mr|
         id=mr.attributes['id'].value.to_sym

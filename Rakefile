@@ -1,13 +1,15 @@
 require 'rdoc/task'
 require 'rspec/core/rake_task'
+require 'logger'
 
+logger=Logger.new(STDOUT)
 
 
 
 SPEC_SUITES = [
     { :id => :base, :title => 'base tests', :pattern => "spec/base/\*\*/\*_spec.rb" },
     { :id => :opsware, :title => 'Opsware model tests', :pattern => "spec/opsware/\*\*/\*_spec.rb" },
-    { :id => :integration, :title => 'Opsware Integration tests (Requires connection to HPSA)', :pattern => "spec/integration/\*\*/\*_spec.rb" }
+    #{ :id => :integration, :title => 'Opsware Integration tests (Requires connection to HPSA)', :pattern => "spec/integration/\*\*/\*_spec.rb" }
     #{ :id => :misc, :title => 'misc tests',
     #  :pattern => ["spec/lib/\*\*/\*_spec.rb", "spec/mailers/\*\*/\*_spec.rb"] },
 ]
@@ -23,7 +25,7 @@ namespace :spec do
       end
     end
     desc "Run all spec suites"
-    task :all => :environment do
+    task :all do
       SPEC_SUITES.each do |suite|
         logger.info "Running #{suite[:title]} ..."
         Rake::Task["spec:suite:#{suite[:id]}"].execute
@@ -32,13 +34,6 @@ namespace :spec do
   end
 end
 
-# begin
-#   require 'rspec/core/rake_task'
-#   RSpec::Core::RakeTask.new(:spec) do |t|
-#     t.rspec_opts = '--format documentation --color'
-#   end
-# rescue LoadError
-# end
 
 require 'jeweler'
 require './lib/rbtwist/version'
@@ -57,4 +52,3 @@ end
 Jeweler::RubygemsDotOrgTasks.new
 
 
-#YARD::Rake::YardocTask.new

@@ -104,7 +104,6 @@ class TypeLoader
     case desc['kind']
     when 'data' then make_data_type name, desc
     when 'service' then make_service_type name, desc
-    when 'enum' then make_enum_type name, desc
     else fail desc.inspect
     end
   end
@@ -122,7 +121,6 @@ class TypeLoader
 
   def make_service_type name, desc
     superclass = get desc['wsdl_base']
-
     Class.new(superclass).tap do |klass|
       klass.init name, desc['props'], desc['methods']
       klass.wsdl_name = desc['wsdl_name']
@@ -134,15 +132,6 @@ class TypeLoader
     end
   end
 
-  def make_enum_type name, desc
-    Class.new(BasicTypes::Enum).tap do |klass|
-      klass.init name, desc['values']
-      klass.wsdl_name = desc['wsdl_name']
-      klass.namespace = desc['namespace']
-      klass.wsdl_ns_type = desc['wsdl_ns_type']
-      klass.abstract = desc['abstract']
-    end
-  end
 end
 
 end
