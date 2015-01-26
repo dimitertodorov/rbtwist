@@ -25,14 +25,14 @@ class TypeLoader
     names.each { |x| get(x) }
   end
 
-  # Reload all extensions for loaded VMODL types
+  # Reload all extensions for loaded Models
   def reload_extensions
     @extension_dirs.each do |path|
       reload_extensions_dir path
     end
   end
 
-  # Reload all extensions for loaded VMODL types from the given directory
+  # Reload all extensions for loaded Opsware Models
   def reload_extensions_dir path
     loaded = Set.new(typenames.select { |x| @namespace.const_defined? x })
     Dir.open(path) do |dir|

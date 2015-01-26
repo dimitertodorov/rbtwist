@@ -9,7 +9,7 @@ logger=Logger.new(STDOUT)
 SPEC_SUITES = [
     { :id => :base, :title => 'base tests', :pattern => "spec/base/\*\*/\*_spec.rb" },
     { :id => :opsware, :title => 'Opsware model tests', :pattern => "spec/opsware/\*\*/\*_spec.rb" },
-    #{ :id => :integration, :title => 'Opsware Integration tests (Requires connection to HPSA)', :pattern => "spec/integration/\*\*/\*_spec.rb" }
+    { :id => :integration, :title => 'Opsware Integration tests (Requires connection to HPSA)', :pattern => "spec/integration/\*\*/\*_spec.rb" , :integration => true}
     #{ :id => :misc, :title => 'misc tests',
     #  :pattern => ["spec/lib/\*\*/\*_spec.rb", "spec/mailers/\*\*/\*_spec.rb"] },
 ]
@@ -29,6 +29,16 @@ namespace :spec do
       SPEC_SUITES.each do |suite|
         logger.info "Running #{suite[:title]} ..."
         Rake::Task["spec:suite:#{suite[:id]}"].execute
+      end
+    end
+
+    desc "Run all 'fast' spec suites. (Excludes integration suites)"
+    task :fast do
+      SPEC_SUITES.each do |suite|
+        unless suite[:integration]
+          logger.info "Running #{suite[:title]} ..."
+          Rake::Task["spec:suite:#{suite[:id]}"].execute
+        end
       end
     end
   end

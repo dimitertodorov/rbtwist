@@ -1,5 +1,8 @@
 #Helpful Methods for Testing.
 require './lib/rbtwist'
+require 'active_support'
+require 'active_support/core_ext/numeric'
+
 Opsware=Rbtwist::Opsware
 cli=Rbtwist.get_connection
 
